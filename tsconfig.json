@@ -1,12 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "lib": [
-            "ESNext",
-            "ESNext.Array",
-            "DOM"
-        ],
-        "module": "es6",
+        "target": "ESNext",
+        "lib": ["dom", "dom.iterable", "ESNext", "ESNext.Array"],
+        "module": "commonjs",
         "moduleResolution": "node",
         "outDir": "dist",
         "declaration": true,
@@ -15,14 +11,8 @@
         "noImplicitReturns": true,
         "strictFunctionTypes": true,
         "strictPropertyInitialization": true,
-        "strictBindCallApply": true,
+        "strictBindCallApply": true
     },
-    "exclude": [
-        "node_modules",
-        "tests",
-        "dist"
-    ],
-    "include": [
-        "src/**/*"
-    ]
+    "exclude": ["node_modules", "tests", "dist"],
+    "include": ["src/**/*"]
 }
